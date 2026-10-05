@@ -1,12 +1,8 @@
 import json
+from validator import validate_required_fields, validate_message
+from classifier import classify_message
 
-with open("input.json", "r") as file:
-    data = json.load(file)
 
-# with open("output.json", "w") as file:
-#     json.dump(data, file, indent=4)
-
-print(f"{data} \n")
-
-for key, value in data.items():
-    print(f"{key}: {value}")
+def read_json_file(file_path: str) -> dict:
+    with open(file_path, 'r', encoding='utf-8') as file:
+        return json.load(file)
