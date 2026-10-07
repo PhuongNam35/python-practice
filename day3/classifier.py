@@ -26,6 +26,6 @@ def classify_priority(message: str) -> str:
     matched_keywords = find_matched_keywords(message)
 
     if matched_keywords:
-        return "high_priority"
+        return "high"
     else:
-        return "normal_priority"
+        return "normal"
