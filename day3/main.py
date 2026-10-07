@@ -1,9 +1,9 @@
 import json
 from validator import validate_required_fields, validate_message
-from classifier import classify_message
+from classifier import classify_priority, find_matched_keywords
 
-INPUT_FILE = "input.json"
-OUTPUT_FILE = "output.json"
+INPUT_FILE = "data/input.json"
+OUTPUT_FILE = "data/output.json"
 
 
 def read_json_file(file_path: str) -> dict:
