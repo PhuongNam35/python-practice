@@ -18,7 +18,6 @@ def find_matched_keywords(message: str) -> list[str]:
     print(validate_message(message))
     if not validate_message(message):
         raise TypeError("Invalid message")
-        # return ["Invalid message"]
 
     clean_words = [
         word.strip(string.punctuation)

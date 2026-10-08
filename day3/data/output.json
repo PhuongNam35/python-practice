@@ -1,10 +1,7 @@
 {
     "customer_id": "CUS-001",
-    "message": "Please process my refund immediately.",
+    "message": "Please process my request.",
     "channel": "email",
-    "priority": "high_priority",
-    "matched_keywords": [
-        "immediately",
-        "refund"
-    ]
+    "priority": "normal",
+    "matched_keywords": []
 }
