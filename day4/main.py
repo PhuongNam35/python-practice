@@ -1,7 +1,6 @@
-from api_client import get_posts
+from api_client import get_single_post, get_user_posts
 
-post = get_posts(100)
+posts = get_user_posts(1)
 
-print(post)
-print(type(post))
-print(post["title"])
+print(posts)
+print(type(posts))
